@@ -1,0 +1,140 @@
+{
+  "doom-eternal": [
+    {
+      "label": "excellent",
+      "url": "https://pcvrcentral.com/mods/doom-eternal-kharvox-argent",
+      "checked": "2026-10-26",
+      "six_dof_aim": true,
+      "name": "KHARVOX: ARGENT",
+      "github_repo": "CactusVRStudios/KHARVOX-ARGENT",
+      "quality_origin": "model"
+    },
+    {
+      "label": "excellent",
+      "url": "https://pcvrcentral.com/mods/doom-eternal-luke-ross-real-vr",
+      "checked": "2026-10-26",
+      "six_dof_aim": null,
+      "name": "R.E.A.L. VR Framework",
+      "github_repo": null,
+      "quality_origin": "model"
+    },
+    {
+      "label": "experimental",
+      "url": "https://pcvrcentral.com/mods/doom-eternal-eternalvr",
+      "checked": "2026-10-26",
+      "six_dof_aim": true,
+      "name": "EternalVR",
+      "github_repo": "ArcadaLabs-Jason/EternalVR",
+      "quality_origin": "model"
+    }
+  ],
+  "alien-isolation": [
+    {
+      "label": "excellent",
+      "url": "https://pcvrcentral.com/mods/alien-isolation-mothervr",
+      "checked": "2026-10-26",
+      "six_dof_aim": true,
+      "name": "MotherVR",
+      "github_repo": "Nibre/MotherVR",
+      "quality_origin": "community"
+    },
+    {
+      "label": "experimental",
+      "url": "https://pcvrcentral.com/mods/alien-isolation-grand-mothervr",
+      "checked": "2026-10-26",
+      "six_dof_aim": true,
+      "name": "GRAND-MotherVR",
+      "github_repo": null,
+      "quality_origin": "model"
+    },
+    {
+      "label": "playable",
+      "url": "https://pcvrcentral.com/mods/alien-isolation-vorpx-profile-alien-isolation",
+      "checked": "2026-10-26",
+      "six_dof_aim": null,
+      "name": "vorpX profile (Alien Isolation)",
+      "github_repo": null,
+      "quality_origin": "community"
+    }
+  ],
+  "max-payne-2": [
+    {
+      "label": "excellent",
+      "url": "https://pcvrcentral.com/mods/max-payne-2-max-payne-2-vr",
+      "checked": "2026-10-26",
+      "six_dof_aim": true,
+      "name": "Max Payne 2 VR",
+      "github_repo": "evilSheep/max-payne-2-vr",
+      "quality_origin": "model"
+    }
+  ],
+  "outer-wilds": [
+    {
+      "label": "native-like",
+      "url": "https://pcvrcentral.com/mods/outer-wilds-nomai-vr",
+      "checked": "2026-10-26",
+      "six_dof_aim": true,
+      "name": "NomaiVR",
+      "github_repo": "Raicuparta/nomai-vr",
+      "quality_origin": "community"
+    },
+    {
+      "label": "native-like",
+      "url": "https://pcvrcentral.com/mods/outer-wilds-nomaivronlinepatches",
+      "checked": "2026-10-26",
+      "six_dof_aim": null,
+      "name": "NomaiVROnlinePatches",
+      "github_repo": "artumino/NomaiVROnlinePatches",
+      "quality_origin": "community"
+    },
+    {
+      "label": "playable",
+      "url": "https://pcvrcentral.com/mods/outer-wilds-uuvr",
+      "checked": "2026-10-26",
+      "six_dof_aim": null,
+      "name": "UUVR (Generic Unity Injection)",
+      "github_repo": "Raicuparta/uuvr",
+      "quality_origin": "community"
+    },
+    {
+      "label": "playable",
+      "url": "https://pcvrcentral.com/mods/outer-wilds-depth3d",
+      "checked": "2026-10-26",
+      "six_dof_aim": null,
+      "name": "SuperDepth3D (ReShade)",
+      "github_repo": "BlueSkyDefender/Depth3D",
+      "quality_origin": "community"
+    }
+  ],
+  "subnautica": [
+    {
+      "label": "experimental",
+      "url": "https://pcvrcentral.com/mods/subnautica-submersedvr",
+      "checked": "2026-10-26",
+      "six_dof_aim": true,
+      "name": "SubmersedVR",
+      "github_repo": "Okabintaro/SubmersedVR",
+      "quality_origin": "community"
+    }
+  ],
+  "titanfall-2": [
+    {
+      "label": "unknown",
+      "url": "https://pcvrcentral.com/mods/titanfall-2-circuitlord-vr",
+      "checked": "2026-10-26",
+      "six_dof_aim": null,
+      "name": "Titanfall 2 VR by CircuitLord",
+      "github_repo": "CircuitLord/CircuitLordVRModInstaller",
+      "quality_origin": null
+    },
+    {
+      "label": "playable",
+      "url": "https://pcvrcentral.com/mods/titanfall-2-vorpx-profile-titanfall-2",
+      "checked": "2026-10-26",
+      "six_dof_aim": null,
+      "name": "vorpX profile (Titanfall 2)",
+      "github_repo": null,
+      "quality_origin": "community"
+    }
+  ]
+}

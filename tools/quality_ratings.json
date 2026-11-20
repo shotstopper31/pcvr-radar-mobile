@@ -1,0 +1,92 @@
+{
+  "nibre/mothervr": {
+    "label": "excellent",
+    "url": "https://pcvrcentral.com/mods/alien-isolation-mothervr",
+    "checked": "2026-10-26",
+    "six_dof_aim": true,
+    "name": "MotherVR",
+    "github_repo": "Nibre/MotherVR",
+    "quality_origin": "community"
+  },
+  "cactusvrstudios/kharvox-argent": {
+    "label": "excellent",
+    "url": "https://pcvrcentral.com/mods/doom-eternal-kharvox-argent",
+    "checked": "2026-10-26",
+    "six_dof_aim": true,
+    "name": "KHARVOX: ARGENT",
+    "github_repo": "CactusVRStudios/KHARVOX-ARGENT",
+    "quality_origin": "model"
+  },
+  "arcadalabs-jason/eternalvr": {
+    "label": "experimental",
+    "url": "https://pcvrcentral.com/mods/doom-eternal-eternalvr",
+    "checked": "2026-10-26",
+    "six_dof_aim": true,
+    "name": "EternalVR",
+    "github_repo": "ArcadaLabs-Jason/EternalVR",
+    "quality_origin": "model"
+  },
+  "evilsheep/max-payne-2-vr": {
+    "label": "excellent",
+    "url": "https://pcvrcentral.com/mods/max-payne-2-max-payne-2-vr",
+    "checked": "2026-10-26",
+    "six_dof_aim": true,
+    "name": "Max Payne 2 VR",
+    "github_repo": "evilSheep/max-payne-2-vr",
+    "quality_origin": "model"
+  },
+  "raicuparta/nomai-vr": {
+    "label": "native-like",
+    "url": "https://pcvrcentral.com/mods/outer-wilds-nomai-vr",
+    "checked": "2026-10-26",
+    "six_dof_aim": true,
+    "name": "NomaiVR",
+    "github_repo": "Raicuparta/nomai-vr",
+    "quality_origin": "community"
+  },
+  "artumino/nomaivronlinepatches": {
+    "label": "native-like",
+    "url": "https://pcvrcentral.com/mods/outer-wilds-nomaivronlinepatches",
+    "checked": "2026-10-26",
+    "six_dof_aim": null,
+    "name": "NomaiVROnlinePatches",
+    "github_repo": "artumino/NomaiVROnlinePatches",
+    "quality_origin": "community"
+  },
+  "raicuparta/uuvr": {
+    "label": "playable",
+    "url": "https://pcvrcentral.com/mods/outer-wilds-uuvr",
+    "checked": "2026-10-26",
+    "six_dof_aim": null,
+    "name": "UUVR (Generic Unity Injection)",
+    "github_repo": "Raicuparta/uuvr",
+    "quality_origin": "community"
+  },
+  "blueskydefender/depth3d": {
+    "label": "playable",
+    "url": "https://pcvrcentral.com/mods/outer-wilds-depth3d",
+    "checked": "2026-10-26",
+    "six_dof_aim": null,
+    "name": "SuperDepth3D (ReShade)",
+    "github_repo": "BlueSkyDefender/Depth3D",
+    "quality_origin": "community"
+  },
+  "okabintaro/submersedvr": {
+    "label": "experimental",
+    "url": "https://pcvrcentral.com/mods/subnautica-submersedvr",
+    "checked": "2026-10-26",
+    "six_dof_aim": true,
+    "name": "SubmersedVR",
+    "github_repo": "Okabintaro/SubmersedVR",
+    "quality_origin": "community"
+  },
+  "circuitlord/circuitlordvrmodinstaller": {
+    "label": "unknown",
+    "url": "https://pcvrcentral.com/mods/titanfall-2-circuitlord-vr",
+    "checked": "2026-10-26",
+    "six_dof_aim": null,
+    "name": "Titanfall 2 VR by CircuitLord",
+    "github_repo": "CircuitLord/CircuitLordVRModInstaller",
+    "quality_origin": null
+  }
+}
