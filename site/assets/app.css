@@ -10,3 +10,73 @@
 [hidden]{display:none!important}
 
 .stat.tappable{cursor:pointer;text-align:left}.stat.tappable:hover{border-color:var(--primary)}
+
+/* v0.7.1 — Fresh mod announcements (independent of unapproved Discord access). */
+.fresh-mods{margin:24px 0 17px}
+.fresh-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:13px}
+.fresh-heading h2{font-size:22px;line-height:1.2;letter-spacing:-.6px;margin:7px 0 4px}
+.fresh-heading p{font-size:11px;color:var(--muted);line-height:1.5;margin:0}
+.fresh-all{flex-shrink:0;background:transparent;border:1px solid var(--line);border-radius:8px;color:var(--primary);font-size:11px;font-weight:750;padding:10px 12px}
+.fresh-tabs{display:flex;gap:6px;margin:0 0 12px;overflow-x:auto;scrollbar-width:none}
+.fresh-tabs button{border:1px solid var(--line);color:var(--muted);background:var(--card);border-radius:30px;padding:8px 12px;font-size:11px;font-weight:650;white-space:nowrap}
+.fresh-tabs button.active{background:color-mix(in srgb,var(--primary) 16%,var(--card));color:var(--primary);border-color:color-mix(in srgb,var(--primary) 42%,var(--line))}
+.fresh-scroll{display:flex;gap:11px;overflow-x:auto;padding:0 0 10px;scroll-snap-type:x proximity;scrollbar-color:var(--line) transparent}
+.fresh-card{background:var(--card);border:1px solid var(--line);width:min(300px,84vw);flex:0 0 min(300px,84vw);border-radius:11px;overflow:hidden;scroll-snap-align:start;min-width:0}
+.fresh-art{height:72px;position:relative;overflow:hidden;background:linear-gradient(120deg,#283c54,#324b57)}
+:root[data-theme=firestorm] .fresh-art{background:linear-gradient(120deg,#562822,#963d2b)}
+.fresh-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%;opacity:.83}
+.fresh-art:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,var(--card))}
+.fresh-art span{position:absolute;z-index:1;left:10px;bottom:8px;font-size:9px;letter-spacing:.6px;text-transform:uppercase;font-weight:800;color:#e6f8ff;text-shadow:0 1px 4px #000}
+.fresh-card-body{padding:10px 12px 11px}
+.fresh-card-top{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.fresh-stage{font-size:9px;border:1px solid color-mix(in srgb,var(--primary) 50%,var(--line));color:var(--primary);padding:3px 6px;border-radius:5px;font-weight:800}
+.fresh-platform{font-size:9px;color:var(--muted);padding:3px 5px;border:1px solid var(--line);border-radius:5px}.fresh-date{font-size:10px;color:var(--soft);white-space:nowrap;margin-left:auto}
+.fresh-card h3{font-size:14px;line-height:1.25;margin:8px 0 4px;font-weight:800;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:34px}
+.fresh-card p{font-size:11px;color:var(--muted);margin:0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.fresh-bottom{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);margin-top:9px;padding-top:8px;font-size:10px;color:var(--soft);gap:8px}
+.fresh-bottom a{font-weight:800;white-space:nowrap}
+.fresh-empty{padding:13px 14px;border:1px dashed var(--line);background:var(--card);border-radius:11px;color:var(--muted);font-size:11px;line-height:1.6}
+.fresh-empty a{white-space:nowrap}
+.bottom-nav svg{height:22px;width:22px;display:block;stroke:currentColor;flex-shrink:0}
+.bottom-nav button .nav-label{font-size:10px;font-weight:750}
+.settings-actions a{border:1px solid var(--line);background:var(--panel);color:var(--primary);padding:10px 11px;border-radius:7px;font-weight:700;font-size:11px}
+
+@media(max-width:650px){
+ .fresh-mods{margin:16px 0 12px}
+ .fresh-heading{margin-bottom:8px;align-items:center}
+ .fresh-heading h2{font-size:18px;letter-spacing:-.4px;margin:4px 0 3px}
+ .fresh-heading p{font-size:10px;line-height:1.4}
+ .fresh-all{padding:8px 9px;font-size:10px}
+ .fresh-tabs{margin-bottom:8px}
+ .fresh-tabs button{padding:6px 10px;font-size:10px}
+ .fresh-card{flex-basis:215px;width:215px}
+ .fresh-art{height:54px}
+ .fresh-card-body{padding:8px 10px}
+ .fresh-card h3{font-size:12px;min-height:30px;margin:5px 0 3px}
+ .fresh-bottom{margin-top:6px;padding-top:6px}
+ .bottom-nav button{gap:3px}
+ .bottom-nav button .nav-label{font-size:9px}
+ /* Selected by default on phones; switchable in Settings. Desktop stays unchanged. */
+ :root[data-compact=true] .content{padding-top:9px}
+ :root[data-compact=true] .notice{font-size:10px;padding:7px 10px;line-height:1.35;margin-bottom:8px}
+ :root[data-compact=true] .hero{min-height:unset;padding:13px 15px;border-radius:12px;display:block}
+ :root[data-compact=true] .hero .eyebrow,:root[data-compact=true] .hero p,:root[data-compact=true] .radar-graphic{display:none}
+ :root[data-compact=true] .hero h1{font-size:22px;line-height:1.1;letter-spacing:-.6px;margin:0 0 9px}
+ :root[data-compact=true] .hero h1 br{display:none}
+ :root[data-compact=true] .hero-actions{margin:0;gap:7px}
+ :root[data-compact=true] .hero-actions button{padding:7px 10px;font-size:10px}
+ :root[data-compact=true] .stats{gap:7px;margin-top:8px}
+ :root[data-compact=true] .stat{padding:9px 11px;border-radius:9px}
+ :root[data-compact=true] .stat-label{font-size:8px;line-height:1.25}
+ :root[data-compact=true] .stat-value{font-size:22px;line-height:1.1;margin:3px 0 0}
+ :root[data-compact=true] .stat-note{display:none}
+ :root[data-compact=true] .section-intro{margin:15px 0 10px}
+ :root[data-compact=true] .section-intro h2{font-size:19px;margin:4px 0}
+ :root[data-compact=true] .section-intro p{font-size:10px}
+ :root[data-compact=true] .version-pill{font-size:7px;padding:5px}
+ :root[data-compact=true] .fresh-mods{margin:13px 0 10px}
+ :root[data-compact=true] .fresh-card{flex-basis:205px;width:205px}
+ :root[data-compact=true] .fresh-art{height:47px}
+ :root[data-compact=true] .fresh-card-body{padding:8px 9px}
+ :root[data-compact=true] .fresh-scroll{gap:8px;padding-bottom:5px}
+}

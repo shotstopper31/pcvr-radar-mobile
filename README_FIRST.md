@@ -1,6 +1,16 @@
-# PCVR Radar v0.7 — Standalone mobile edition (Galaxy S24+)
+# PCVR Radar v0.7.1 — Standalone mobile edition (Galaxy S24+)
 
 This is a NEW, independent, installable **progressive web app (PWA)**. It does not require a gaming PC, local Python server, pairing code, port 8765, or your desktop PCVR Radar app after you publish it to an HTTPS URL.
+
+## Upgrade from the live v0.7 GitHub Pages site
+
+1. Download and extract this v0.7.1 package on your Windows PC.
+2. Upload the updated `site/` files and `README_FIRST.md` to the `main` branch of `shotstopper31/pcvr-radar-mobile`. Preserve the directory structure and allow overwriting existing filenames. Do not put the ZIP itself in GitHub.
+3. The existing `.github/workflows/publish.yml` is unchanged. Commit the files; the existing GitHub Actions workflow should publish the latest version.
+4. Verify your deployment run is green, then open `https://shotstopper31.github.io/pcvr-radar-mobile/` and refresh the installed PWA. If cached, close/reopen once or use the web browser's reload.
+5. No Steam, ITAD or personal data files are included. Your device watchlist remains in browser storage (same URL and browser) and is not reset by this update.
+
+**Important:** The Fresh Mod Announcements section does not scrape or automatically monitor Discord. Index release cards require a real release date/version in the Flat2VR Index. Curated community post cards appear only after verified links are added to `site/data/announcements.json`; see `CURATED_ANNOUNCEMENTS.md`.
 
 ## Best deployment: GitHub Pages (free public shareable URL + automatic news updates)
 
@@ -22,6 +32,10 @@ You may optionally enable up-to-date Canadian prices from IsThereAnyDeal by sett
 This second approach is the quickest to get a public link. It will still attempt to refresh the Flat2VR mod catalog directly when the page opens, but **news/headline aggregation and cached prices only refresh automatically with the included GitHub Actions workflow**. Cloudflare direct upload does not run the Python updater.
 
 ## What works now
+
+- Compact phone home layout with a settings toggle; original desktop layout and game art are preserved.
+- Fresh mod announcements: dated Flat2VR Index releases plus optional manually verified community posts, with source/category filters and source links.
+
 
 - Mobile-first responsive layout with real Steam header artwork when available; desktop browser compatible.
 - Original Ocean blue/green and Firestorm orange/red themes, saved per-device.
