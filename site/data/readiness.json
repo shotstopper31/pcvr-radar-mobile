@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "methodology": "PCVR Radar readiness: documented controller support (35), installation path (25), public installation guide (20), dated release within 365 days (15), and documented runtime requirements (5). A 85–100, B 70–84, C 50–69, D below 50. A grade is withheld unless three independent facts are documented; this is not a review score.",
+  "notes": "These are curated links to mod developers' published documentation. They are not UnflatVR grades, PCVR Central quality ratings, or independent hands-on tests. Missing documentation means Not assessed, not low quality.",
+  "projects": {
+    "circuitlord/circuitlordvrmodinstaller": {
+      "game_title": "Titanfall 2",
+      "controls": "full",
+      "installation": "one-click",
+      "installation_guide": true,
+      "runtime_documented": true,
+      "runtime": "OpenXR; Steam, EA or Xbox game installation",
+      "source": "https://github.com/CircuitLord/CircuitLordVRModInstaller/blob/main/README.md",
+      "guide": "https://github.com/CircuitLord/CircuitLordVRModInstaller/blob/main/README.md",
+      "reviewed": "2026-11-21",
+      "note": "Official installer documents Titanfall 2 VR, 6DOF controllers, supported install sources and a separate TF2VR profile. Installer repository also covers another title; release dates must be attributed to the specific mod."
+    },
+    "raicuparta/nomai-vr": {
+      "controls": "full",
+      "installation": "mod-manager",
+      "installation_guide": true,
+      "runtime_documented": true,
+      "runtime": "PCVR; Outer Wilds Mod Manager",
+      "source": "https://github.com/Raicuparta/nomai-vr",
+      "guide": "https://github.com/Raicuparta/nomai-vr",
+      "reviewed": "2026-11-21",
+      "note": "Author documents 6DOF controls and mod-manager plus manual installation. Linux/Proton support remains unverified."
+    },
+    "okabintaro/submersedvr": {
+      "controls": "full",
+      "installation": "manual",
+      "installation_guide": true,
+      "runtime_documented": true,
+      "runtime": "SteamVR motion controls",
+      "source": "https://github.com/Okabintaro/SubmersedVR",
+      "guide": "https://github.com/Okabintaro/SubmersedVR",
+      "reviewed": "2026-11-21",
+      "note": "Author documents full motion-controller aim and setup. More manual steps than a one-click installer. Linux/Proton support not independently tested."
+    }
+  }
+}

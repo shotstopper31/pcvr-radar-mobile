@@ -129,7 +129,7 @@ def parse_index(markdown: str) -> list[dict]:
             results.append({
                 "uid": make_uid(title, mod_url), "title": title, "mod_name": mod_name,
                 "mod_url": mod_url, "release_url": version_match.group(2) if version_match else mod_url,
-                "release_tag": release_tag, "released_at": date, "quality": quality,
+                "release_tag": release_tag, "released_at": date, "date_evidence": "index-linked-release" if date and version_match else None, "release_event": ("Initial release" if release_tag and "initial" in release_tag.lower() else ("Dated release (version unspecified)" if "unversioned" in release_tag.lower() else "Latest versioned release")) if date and release_tag else None, "first_release_at": date if release_tag and "initial" in release_tag.lower() else None, "quality": quality,
                 "kind": classify(mod_name, mod_url), "github_repo": repo_from_url(mod_url),
                 "steam_appid": STEAM_IDS.get(title.lower()), "creator": creator,
                 "source": "Flat2VR Index", "linux_status": "Not verified",

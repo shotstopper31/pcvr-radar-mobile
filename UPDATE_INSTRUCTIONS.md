@@ -1,17 +1,30 @@
-# Upgrade PCVR Radar Mobile from v0.7 to v0.7.1
+# PCVR Radar v0.8 — GitHub Pages update
 
-Your existing public site: https://shotstopper31.github.io/pcvr-radar-mobile/
+Repository: `shotstopper31/pcvr-radar-mobile`.
 
-1. Extract **PCVR_Radar_v071_Update.zip** on your Windows PC.
-2. Open https://github.com/shotstopper31/pcvr-radar-mobile and select **Code → Add file → Upload files**. Upload the extracted `site` folder contents while retaining the `site/` folder path, plus the two Markdown guides. Choose the option to replace/overwrite files already in the repository and commit to `main`. Upload the individual extracted files and folders, **not the ZIP file**.
-3. The GitHub Actions workflow (`.github/workflows/publish.yml`) is **unchanged**; you do not need to recreate it.
-4. Check https://github.com/shotstopper31/pcvr-radar-mobile/actions for a successful new run. If an artifact lookup fails temporarily, start a fresh **Run workflow** rather than rerunning only the failed deployment step.
-5. Open your website on your S24+, close/reopen the installed PWA, and refresh. The service worker cache version was changed so v0.7.1 can replace the previous app shell. A second reload can be needed for an already-open PWA.
+## Recommended upload using GitHub website
 
-**New in v0.7.1**
-- Compact home layout enabled by default on smartphones, with Settings toggle.
-- New Fresh Mod Announcements section: dated Flat2VR Index release records, separately from manually curated community posts.
-- Release-status and original platform badges, dated source links, and category filter.
-- Better bottom navigation icons. Desktop layout, Steam game art, personal watchlist, Firestorm theme, and all older sections remain.
+1. Make a backup of your repository if desired. **Do not upload personal Steam API keys, the desktop database, or private settings.**
+2. Download `PCVR_Radar_v080_Update.zip` and extract it on Windows.
+3. Open your GitHub repository. Choose **Add file → Upload files**, and drag the extracted `site/` and `tools/` folders onto the upload page, preserving their directory paths. Existing paths should be replaced. If GitHub's browser uploader does not replace existing files, use GitHub Desktop or your local Git clone to commit the changes instead.
+4. Commit to `main`.
+5. Verify **Actions → Publish independent PCVR Radar mobile app** shows a green check, or manually run it from the Actions tab.
+6. Visit `https://shotstopper31.github.io/pcvr-radar-mobile/` on your Galaxy S24+; reload or close/reopen the installed PWA. Service worker cache name changed to `v08` so the new app shell can replace v0.7.1.
 
-**Important:** No automated Discord `#new-vr-mods` connection is included. The curator guide `CURATED_ANNOUNCEMENTS.md` explains the approved/manual process. No personal Steam data or API credentials are included.
+## What's changed
+
+- Source-linked **initial vs. later releases**; do not use refresh timestamps as release dates.
+- Browser-local **first-discovered tracking**: first successful v0.8 refresh creates a baseline, future unseen mods are marked new *for that browser only*. Not a global discovery date.
+- A separate, **provisional Radar Readiness A–D score** for only three sourced developer projects (Titanfall 2, NomaiVR/Outer Wilds and SubmersedVR/Subnautica); others say Not assessed. Not a copy of UnflatVR grades and not a hands-on review.
+- **Game Hubs** comparison toggle in Discover Mods, preserving artwork and individual mod cards.
+- **Latest linked release activity** list, expressly not a popularity score. Improved detail modal with evidence links, grade breakdown, and platform/runtime descriptions.
+- Same mobile compact theme, Firestorm colours, local owned-game/watchlist storage (all existing `radar7-*` browser keys), news and pricing integration.
+
+## Limitations
+
+- UnflatVR's dataset/grades are NOT scraped or reused. Official developer sources underpin the documented sample ratings.
+- Steam library is personal browser-local in this public standalone version; no Steam API key or automatic library sync.
+- PCVR Central quality labels are independent of the new Radar Readiness score; where quality is unavailable, show Unrated.
+- First release is unknown unless the index explicitly identifies a dated initial release.
+- The hosted updater runs while GitHub Actions deploys. A failed external source leaves existing site data or a bundled starter rather than inventing entries.
+- Additional authored mod pages or reviews require per-title verification.

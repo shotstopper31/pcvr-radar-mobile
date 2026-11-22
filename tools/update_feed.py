@@ -30,7 +30,7 @@ NEWS_SOURCES=[('UploadVR','https://www.uploadvr.com/rss/'),('Road to VR','https:
 
 
 def request(url: str, *, data=None, headers=None, timeout=20):
-    h={'User-Agent':'PCVRRadarMobile/0.7 (+https://github.com/jrejaud/awesome-flat2vr)',
+    h={'User-Agent':'PCVRRadarMobile/0.8 (+https://github.com/jrejaud/awesome-flat2vr)',
        'Accept':'application/json, application/xml, text/xml, text/plain, */*'}
     if headers:h.update(headers)
     if data is not None:
@@ -53,7 +53,7 @@ def catalog():
     for g in FEATURED:
         key=(g['title'].lower(),g['mod_url'].lower())
         if key not in unique:
-            d=enrich_game(dict(g));d['id']=make_uid(d['title'],d['mod_url']);d['release_url']=g['mod_url'];d['source']='Featured';d['released_at']=None;d['release_tag']=None;d.pop('better_options',None)
+            d=enrich_game(dict(g));d['id']=make_uid(d['title'],d['mod_url']);d['release_url']=g['mod_url'];d['source']='Featured';d['released_at']=None;d['release_tag']=None;d['release_event']=None;d['date_evidence']=None;d['first_release_at']=None;d.pop('better_options',None)
             unique[key]=d
         elif g.get('description') and not unique[key].get('description'):
             unique[key]['description']=g['description']
